@@ -20,15 +20,18 @@ The Pi Pico records the speed of an object passing between the sensors, which ar
 A key-word, "trigger\n" is read, and prompts the ESP32S3 CAM to take a photo. The ESP32S3 CAM then uploads said photo to a Firebase storage location, which can be viewed via an app.
 
 ### BOM
-
-| Part  | QTY |
-| :---: | :---: |
+| Part  | Quantity  |
+| :--- | :---: |
 | Freenove ESP32S3 CAM  | `1` |
 | Raspberry Pi Pico  | `1` |
 | Solderless Breadboards (or protoboards)  | `3.5`[^1] |
 | 330 Ω / 470 Ω Resistors| `6` |
-| TTL Logic Level Converter  | `1` |
-| LEDs (Any color will do, but it's really your choice.)  | `8` |
+| TTL Logic Level Converter  | `1` [^2]|
+| LEDs (Any color will do, but it's really your choice.)  | `8`[^3] |
+| Various Cables/DuPont Wires| As needed |
 
-#### Footnotes
-[^1]
+[^1]: Use a small protobard/breadboard for the ESP32. Unfortunately, the Freenove variant is NOT a normal width; some pins are inaccessible by design.
+
+[^2]: Needed if you're using the Pico to drive the HC-SR04s, as those use 5V signaling and the Pico can only accept 3.3V signals.
+
+[^3]: Two LEDs are used for operation success/failure on the ESP32. This allows for headless operation and determination if the photos have uploaded as intended.
