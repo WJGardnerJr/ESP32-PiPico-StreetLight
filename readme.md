@@ -19,6 +19,12 @@ The Pi Pico records the speed of an object passing between the sensors, which ar
 
 A key-word, "trigger\n" is read, and prompts the ESP32S3 CAM to take a photo. The ESP32S3 CAM then uploads said photo to a Firebase storage location, which can be viewed via an app.
 
+## Web App Note:
+
+For the web app, see this repo: https://github.com/WJGardnerJr/ESP32-Web-App
+
+It is maintained separately.
+
 ## Design and Implementation Photos
 
 ### Breadboard Layout:
