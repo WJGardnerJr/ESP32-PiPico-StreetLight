@@ -1,5 +1,6 @@
 /*********
   Modifications and Implementation for Freenove ESP32S3 CAM
+  Updated code to trigger on UART, utilize Pi Pico as secondary microcontroller
   --William Gardner
 
   Original ESP32 Implementation: Credits to Rui Santos
